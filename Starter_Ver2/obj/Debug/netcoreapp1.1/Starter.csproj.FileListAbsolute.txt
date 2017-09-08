@@ -1,0 +1,8 @@
+/Users/BM/Desktop/aspDotNet/Starter_Ver2/bin/Debug/netcoreapp1.1/Starter.deps.json
+/Users/BM/Desktop/aspDotNet/Starter_Ver2/bin/Debug/netcoreapp1.1/Starter.runtimeconfig.json
+/Users/BM/Desktop/aspDotNet/Starter_Ver2/bin/Debug/netcoreapp1.1/Starter.runtimeconfig.dev.json
+/Users/BM/Desktop/aspDotNet/Starter_Ver2/bin/Debug/netcoreapp1.1/Starter.dll
+/Users/BM/Desktop/aspDotNet/Starter_Ver2/bin/Debug/netcoreapp1.1/Starter.pdb
+/Users/BM/Desktop/aspDotNet/Starter_Ver2/obj/Debug/netcoreapp1.1/Starter.AssemblyInfo.cs
+/Users/BM/Desktop/aspDotNet/Starter_Ver2/obj/Debug/netcoreapp1.1/Starter.dll
+/Users/BM/Desktop/aspDotNet/Starter_Ver2/obj/Debug/netcoreapp1.1/Starter.pdb
