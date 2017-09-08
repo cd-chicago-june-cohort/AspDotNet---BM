@@ -2,18 +2,21 @@
     <head>
         <meta charset='utf-8'>
         <title>Ticking Away..</title>
+        <link rel="stylesheet" href="https://bootswatch.com/slate/bootstrap.min.css">
     </head>
     <body>
+        <div class="Container">
+            <div class="col-xs-12" style = "margin-top: 40px; border: 2px solid black; margin-left: auto; margin-right: auto; text-align: center;">
+                <h1>Current Date & Time</h1>
+                @{
+                    DateTime now = DateTime.Now;
+                    string date = "MMM d yyyy";
+                    string time = "t";
 
-        <h1>Current Date & Time</h1>
-        @{
-            DateTime now = DateTime.Now;
-            string date = "MMM d yyyy";
-            string time = "t";
-
-            <p>@now.ToString(date)</p>
-            <p>@now.ToString(time)</p>
-        }
-
+                    <p>@now.ToString(date)</p>
+                    <p>@now.ToString(time)</p>
+                }
+            </div>
+        </div>
     </body>
 </html>
