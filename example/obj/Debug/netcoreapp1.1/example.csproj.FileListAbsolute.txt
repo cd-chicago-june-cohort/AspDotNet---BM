@@ -1,0 +1,8 @@
+/Users/BM/Desktop/aspDotNet/example/bin/Debug/netcoreapp1.1/example.deps.json
+/Users/BM/Desktop/aspDotNet/example/bin/Debug/netcoreapp1.1/example.runtimeconfig.json
+/Users/BM/Desktop/aspDotNet/example/bin/Debug/netcoreapp1.1/example.runtimeconfig.dev.json
+/Users/BM/Desktop/aspDotNet/example/bin/Debug/netcoreapp1.1/example.dll
+/Users/BM/Desktop/aspDotNet/example/bin/Debug/netcoreapp1.1/example.pdb
+/Users/BM/Desktop/aspDotNet/example/obj/Debug/netcoreapp1.1/example.AssemblyInfo.cs
+/Users/BM/Desktop/aspDotNet/example/obj/Debug/netcoreapp1.1/example.dll
+/Users/BM/Desktop/aspDotNet/example/obj/Debug/netcoreapp1.1/example.pdb

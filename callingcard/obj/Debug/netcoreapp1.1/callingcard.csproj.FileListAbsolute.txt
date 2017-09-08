@@ -1,0 +1,8 @@
+/Users/BM/Desktop/aspDotNet/callingcard/bin/Debug/netcoreapp1.1/callingcard.deps.json
+/Users/BM/Desktop/aspDotNet/callingcard/bin/Debug/netcoreapp1.1/callingcard.runtimeconfig.json
+/Users/BM/Desktop/aspDotNet/callingcard/bin/Debug/netcoreapp1.1/callingcard.runtimeconfig.dev.json
+/Users/BM/Desktop/aspDotNet/callingcard/bin/Debug/netcoreapp1.1/callingcard.dll
+/Users/BM/Desktop/aspDotNet/callingcard/bin/Debug/netcoreapp1.1/callingcard.pdb
+/Users/BM/Desktop/aspDotNet/callingcard/obj/Debug/netcoreapp1.1/callingcard.AssemblyInfo.cs
+/Users/BM/Desktop/aspDotNet/callingcard/obj/Debug/netcoreapp1.1/callingcard.dll
+/Users/BM/Desktop/aspDotNet/callingcard/obj/Debug/netcoreapp1.1/callingcard.pdb
