@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Ticking Away..</title>
+    </head>
+    <body>
+
+        <h1>Current Date & Time</h1>
+        @{
+            DateTime now = DateTime.Now;
+            string date = "MMM d yyyy";
+            string time = "t";
+
+            <p>@now.ToString(date)</p>
+            <p>@now.ToString(time)</p>
+        }
+
+    </body>
+</html>

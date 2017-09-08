@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Hello!</title>
+    </head>
+    <body>
+    @{
+        var StringList = new List<string>{
+                                "Hello World (in 3 different languages)",
+                                "Fizz Buzz",
+                                "1 to 255",
+                                "1 to 255 (Odds ONLY)",
+                                "Over 6 of the 'Basic 13' algorithms"
+                            };
+        <h1>
+            <p>Bald Mike Knows:</p>
+        </h1>
+        foreach(var word in StringList)
+        {
+            // We can render HTML from within C# code!
+            
+                <li>@word</li>
+                @if(word.Length > 4)
+          
+             <p>----@word is a great skill.</p>
+          
+            
+        }
+    }
+
+    </body>
+</html>
