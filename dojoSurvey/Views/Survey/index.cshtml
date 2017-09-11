@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <meta charset='utf-8'>
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+        <link rel="stylesheet" href="https://bootswatch.com/cosmo/bootstrap.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+        <link rel="stylesheet" href="~/css/styles.css">
+
+        <title>Cojovey</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="jumbotron">
+                <h1>Coding Dojo Survey</h1>
+            </div>
+                <div class="col-md-12">
+                <form class="pure-form pure-form-aligned" action="/result" method="post">
+                    <fieldset>
+                        <div class="pure-control-group">
+                            <label for="name">Your </label>
+                            <input type="text" class="pure-input-1-2" id="your_name" name="name" placeholder=" Name" required autofocus>
+                        </div>
+                        <div class="pure-control-group">
+                            <label for="location">Dojo:</label>
+                            <select name="dojo" type="text" class="pure-input-1-2" id="dojo" required>
+                                <option value="null" disabled selected>Location</option>
+                                <option value="Seattle">Seattle</option>
+                                <option value="Los Angeles">Los Angeles</option>
+                                <option value="Silicon Valley">Silicon Valley</option>
+                                <option value="Dallas">Dallas</option>
+                                <option value="Washington DC">Washington DC</option>
+                                <option value="Chicago">Chicago</option>
+                                <option value="Tulsa">Tulsa</option>
+                            </select>
+                        </div>
+                        <div class="pure-control-group">
+                            <label for="language">Favorite </label>
+                            <select name="language" class="pure-input-1-2" id="language" required>
+                                <option value="null" disabled selected> Language</option>
+                                <option value="JavaScript">JavaScript</option>
+                                <option value="Python">Python</option>
+                                <option value="C#">C#</option>
+                                <option value="French">French</option>
+                            </select>
+                        </div>
+                        <div class="pure-control-group">
+                            <label for="comments">Comments:</label>
+                            <textarea class="pure-input-1-2" id="comments" name="comments" placeholder=" Optional"></textarea>
+                        </div>
+                        <div class="pure-controls">
+                            <input class="button" type="submit" name="submit" value="Submit" required>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
