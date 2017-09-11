@@ -10,7 +10,7 @@ namespace example.Controllers
         public IActionResult Index()
         {
             return View("Index");
-            //Both of these returns will render the same view (You only need one!)
+            
         }
     }
 }

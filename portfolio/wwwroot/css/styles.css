@@ -1,0 +1,29 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+body {
+    background-image: url("../images/monkey1.jpg");
+    background-size: cover;
+}
+
+.portfolio {
+    display: block;
+    color: white;
+    float: right;
+}
+
+.header {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    color: white;
+    font-size: 100px;
+}
+
+.click {
+    font-size: 100px;
+    margin-top: 600px;
+}

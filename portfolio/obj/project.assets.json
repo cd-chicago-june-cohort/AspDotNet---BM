@@ -9554,16 +9554,16 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/BM/Desktop/aspDotNet/example/example.csproj",
-      "projectName": "example",
-      "projectPath": "/Users/BM/Desktop/aspDotNet/example/example.csproj",
-      "outputPath": "/Users/BM/Desktop/aspDotNet/example/obj/",
+      "projectUniqueName": "/Users/BM/Desktop/aspDotNet/portfolio/portfolio.csproj",
+      "projectName": "portfolio",
+      "projectPath": "/Users/BM/Desktop/aspDotNet/portfolio/portfolio.csproj",
+      "outputPath": "/Users/BM/Desktop/aspDotNet/portfolio/obj/",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"
       ],
       "files": {
-        "lib/netcoreapp1.1/example.dll": "/Users/BM/Desktop/aspDotNet/example/bin/placeholder/netcoreapp1.1/example.dll"
+        "lib/netcoreapp1.1/portfolio.dll": "/Users/BM/Desktop/aspDotNet/portfolio/bin/placeholder/netcoreapp1.1/portfolio.dll"
       },
       "frameworks": {
         "netcoreapp1.1": {

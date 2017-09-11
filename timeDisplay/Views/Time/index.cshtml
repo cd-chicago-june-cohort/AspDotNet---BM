@@ -6,11 +6,11 @@
     </head>
     <body>
         <div class="Container">
-            <div class="col-xs-12" style = "margin-top: 40px; border: 2px solid black; margin-left: auto; margin-right: auto; text-align: center;">
+            <div class="col-xs-12" style = "margin-top: 40px; border: 2px solid black; margin-left: auto; margin-right: auto; text-align: center; background-color: black;">
                 <h1>Current Date & Time</h1>
                 @{
                     DateTime now = DateTime.Now;
-                    string date = "MMM d yyyy";
+                    string date = "D";
                     string time = "t";
 
                     <p>@now.ToString(date)</p>

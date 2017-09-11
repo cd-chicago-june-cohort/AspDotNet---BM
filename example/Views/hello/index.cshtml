@@ -1,6 +1,7 @@
 <html>
     <head>
         <meta charset='utf-8'>
+        <link rel="stylesheet" href="~/css/styles.css">
         <title>Hello!</title>
     </head>
     <body>
@@ -13,18 +14,18 @@
                                 "Over 6 of the 'Basic 13' algorithms"
                             };
         <h1>
-            <p>Bald Mike Knows:</p>
+            <p class="header">Bald Mike Knows:</p>
         </h1>
         foreach(var word in StringList)
         {
             // We can render HTML from within C# code!
             
                 <li>@word</li>
-                @if(word.Length > 4)
+                @if (word.Length > 4) {
           
-             <p>----@word is a great skill.</p>
+             <p>----which is a great skill.</p>
           
-            
+            }
         }
     }
 
