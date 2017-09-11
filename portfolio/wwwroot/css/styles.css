@@ -1,7 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    text-align: center;
+    
 }
 
 body {
@@ -26,4 +26,28 @@ body {
 .click {
     font-size: 100px;
     margin-top: 600px;
+}
+
+.info {
+    margin-left: auto;
+    color: white;
+}
+
+.portHead {
+    text-align: center;
+    width: 400px;
+    border: 4px solid black;
+    border-radius: 20px;
+    background: slategrey;
+}
+
+.portWords {
+    margin: 5px;
+    padding: 5px;
+    font-size: 18;
+    text-align: center;
+    width: 400px;
+    border: 4px solid black;
+    border-radius: 20px;
+    background: slategrey;
 }
