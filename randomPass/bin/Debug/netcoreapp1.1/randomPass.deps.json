@@ -21,7 +21,7 @@
   },
   "targets": {
     ".NETCoreApp,Version=v1.1": {
-      "example/1.0.0": {
+      "randompass/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore": "1.1.2",
           "Microsoft.AspNetCore.Mvc": "1.1.0",
@@ -30,10 +30,10 @@
           "Microsoft.NETCore.App": "1.1.2"
         },
         "runtime": {
-          "example.dll": {}
+          "randomPass.dll": {}
         },
         "compile": {
-          "example.dll": {}
+          "randomPass.dll": {}
         }
       },
       "microsoft.aspnetcore/1.1.2": {
@@ -2913,7 +2913,7 @@
     }
   },
   "libraries": {
-    "example/1.0.0": {
+    "randompass/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

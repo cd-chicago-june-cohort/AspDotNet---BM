@@ -9585,16 +9585,16 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/BM/Desktop/aspDotNet/example/example.csproj",
-      "projectName": "example",
-      "projectPath": "/Users/BM/Desktop/aspDotNet/example/example.csproj",
-      "outputPath": "/Users/BM/Desktop/aspDotNet/example/obj/",
+      "projectUniqueName": "/Users/BM/Desktop/aspDotNet/randomPass/randomPass.csproj",
+      "projectName": "randomPass",
+      "projectPath": "/Users/BM/Desktop/aspDotNet/randomPass/randomPass.csproj",
+      "outputPath": "/Users/BM/Desktop/aspDotNet/randomPass/obj/",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"
       ],
       "files": {
-        "lib/netcoreapp1.1/example.dll": "/Users/BM/Desktop/aspDotNet/example/bin/placeholder/netcoreapp1.1/example.dll"
+        "lib/netcoreapp1.1/randomPass.dll": "/Users/BM/Desktop/aspDotNet/randomPass/bin/placeholder/netcoreapp1.1/randomPass.dll"
       },
       "frameworks": {
         "netcoreapp1.1": {

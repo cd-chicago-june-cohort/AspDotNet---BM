@@ -8,12 +8,30 @@ namespace example.Controllers
         [HttpGet]
         [Route("")]
         public IActionResult Index()
-        {
-            return View("Index");
-            
-        }
+    {
+        // Will redirect to the "OtherMethod" method
+        return RedirectToAction("OtherMethod");
+    }
+    // Other code
+    public IActionResult OtherMethod()
+    {
+        return View();
+    }
     }
 }
+
+
+ //  Other code
+    // public IActionResult Index()
+    // {
+    //     // Will redirect to the "OtherMethod" method
+    //     return RedirectToAction("OtherMethod");
+    // }
+    // // Other code
+    // public IActionResult OtherMethod()
+    // {
+    //     return View();
+    // }
 
 
 // BELOW IS EXAMPLE OF JSON data to page

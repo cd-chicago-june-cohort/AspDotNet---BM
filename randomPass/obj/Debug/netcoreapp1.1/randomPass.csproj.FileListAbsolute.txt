@@ -1,0 +1,8 @@
+/Users/BM/Desktop/aspDotNet/randomPass/bin/Debug/netcoreapp1.1/randomPass.deps.json
+/Users/BM/Desktop/aspDotNet/randomPass/bin/Debug/netcoreapp1.1/randomPass.runtimeconfig.json
+/Users/BM/Desktop/aspDotNet/randomPass/bin/Debug/netcoreapp1.1/randomPass.runtimeconfig.dev.json
+/Users/BM/Desktop/aspDotNet/randomPass/bin/Debug/netcoreapp1.1/randomPass.dll
+/Users/BM/Desktop/aspDotNet/randomPass/bin/Debug/netcoreapp1.1/randomPass.pdb
+/Users/BM/Desktop/aspDotNet/randomPass/obj/Debug/netcoreapp1.1/randomPass.AssemblyInfo.cs
+/Users/BM/Desktop/aspDotNet/randomPass/obj/Debug/netcoreapp1.1/randomPass.dll
+/Users/BM/Desktop/aspDotNet/randomPass/obj/Debug/netcoreapp1.1/randomPass.pdb

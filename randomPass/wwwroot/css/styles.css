@@ -1,0 +1,23 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.col-centered {
+    text-align: center;
+    float: none;
+    margin: 0 auto;
+}
+
+.codebox {
+    border: 2px solid black;
+    background: slategray;
+    box-shadow: 5px 5px 5px;
+}
+
+.button {
+    margin-top: 20px;
+    font-size: 20px;
+    border-radius: 20px;
+    width: 100px;
+}
