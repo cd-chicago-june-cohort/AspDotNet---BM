@@ -17,7 +17,7 @@
         <div class="container">
 
             <div class="jumbotron col-centered">
-                <h1>Random Passcode v 1.1</h1>
+                <h1>Random Passcode v 1.3 beta, LLC.</h1>
             </div>
 
             <div class="col-xs-6 col-centered">
@@ -28,10 +28,13 @@
                 <h1 class="codebox">@ViewBag.passcode</h1>
             </div>
 
-            <div class="col-xs-6 col-centered">
-            <form action="/generate">
-                <input type="submit" value="generate" class="button" id="generate">
-            </form>
+            <div class="col-xs-6 col-centered inline">
+                <form action="/generate">
+                    <input type="submit" value="generate" class="button" id="generate">
+                </form>
+                <form action="/reset">
+                    <input type="submit" value="reset" class="button" id="reset">
+                </form>
             </div>
 
         </div>

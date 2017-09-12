@@ -49,5 +49,13 @@ namespace randomPass.Controllers
         {
             return RedirectToAction("index");
         }
+
+        [HttpGet]
+        [Route("reset")]
+        public IActionResult reset()
+        {
+            HttpContext.Session.Clear();
+            return RedirectToAction("index");
+        }
     }
 }
