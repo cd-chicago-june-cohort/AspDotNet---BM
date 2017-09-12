@@ -35,7 +35,7 @@ namespace randomPass.Controllers
                 counter += 1;
             }
 
-            HttpContext.Session.SetInt32("counter", 0);
+            HttpContext.Session.SetInt32("counter", (int)counter);
 
             ViewBag.counter = counter;
             ViewBag.passcode = genPasscode();

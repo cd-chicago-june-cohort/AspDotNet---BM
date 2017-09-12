@@ -15,8 +15,10 @@ namespace randomPass
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc();
+
             services.AddSession();
+            services.AddMvc();
+            
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
@@ -29,9 +31,10 @@ namespace randomPass
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseSession();
             app.UseMvc();
             app.UseStaticFiles();
-            app.UseSession();
+            
         }
     }
 }
