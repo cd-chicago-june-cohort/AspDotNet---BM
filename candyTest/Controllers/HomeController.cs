@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
+using DbConnection;
 
 namespace PokeInfo.Controllers
 {
@@ -24,15 +25,9 @@ namespace PokeInfo.Controllers
         [Route("")]
         public IActionResult Index()
         {
-            if(HttpContext.Session.GetObjectFromJson<Dictionary<string, object>>("pokeInfo") == null){
-                ViewBag.Pokemon = null;
-            }
-            else{
-                var PokeInfo = new Dictionary<string, object>();
-                PokeInfo = HttpContext.Session.GetObjectFromJson<Dictionary<string, object>>("pokeInfo");
-                ViewBag.Pokemon = PokeInfo;
-            }
-            return View("index");
+            List<Dictionary<string, object>> AllUsers = DbConnector.Query("SELECT * FROM users");
+            // Other code
+            return RedirectToAction("index");
         }
 
         [HttpGet]

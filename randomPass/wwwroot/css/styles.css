@@ -6,7 +6,7 @@
 .col-centered {
     text-align: center;
     float: none;
-    margin: 0 auto;
+    margin: auto;
 }
 
 .codebox {
@@ -16,10 +16,11 @@
 }
 
 .button {
-    margin-top: 20px;
+    margin: 20px;
     font-size: 20px;
     border-radius: 20px;
     width: 100px;
+    color: slategray;
 }
 
 .inline {

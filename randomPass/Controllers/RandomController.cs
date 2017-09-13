@@ -21,6 +21,34 @@ namespace randomPass.Controllers
             return passcode;  
 
         }
+            [HttpGet]
+            [Route("new")]
+            public string newPasscode()
+            {
+            string digits = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+            Random randNum = new Random();
+            char[] passcodeArr = new char[14];
+            for (int i=0; i<passcodeArr.Length; i++){
+                passcodeArr[i] = digits[randNum.Next(digits.Length)];
+            }
+
+            int? counter = HttpContext.Session.GetInt32("counter");
+            if (counter == null)
+            {
+                counter = 1;
+            } else {
+                counter += 1;
+            }
+
+            HttpContext.Session.SetInt32("counter", (int)counter);
+
+            ViewBag.counter = counter;
+
+            string passcode = new String(passcodeArr);
+            return passcode;  
+
+            }
+
 
         [HttpGet]
         [Route("/")]
