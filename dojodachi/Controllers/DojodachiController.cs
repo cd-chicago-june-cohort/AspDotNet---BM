@@ -70,7 +70,7 @@ namespace dojodachi.Controllers
             int? fullness = HttpContext.Session.GetInt32("fullness");
             int? meals = HttpContext.Session.GetInt32("meals");
 
-            // 25% chance it won't like the food, little prick.
+            // 25% chance it won't like the food.
             int likey = randNum.Next(1, 101);
             int food = randNum.Next(5,11);
 

@@ -1,0 +1,15 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.pokename {
+    background: lightgray;
+}
+
+.center {
+    text-align: center;
+    margin-left: 0px auto;
+    margin-right: 0px auto;
+}

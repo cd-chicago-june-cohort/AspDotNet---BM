@@ -1,0 +1,29 @@
+@{
+    ViewData["Title"] = "PokeData";
+}
+@{
+    <div class="container">
+        <div class="col-xs-12 center">
+            <div class="pokename">
+                <hr>
+                    <h1>Pokemon @ViewBag.Pokemon["name"]</h1>
+                <hr>
+            </div>
+            <div class="col-xs-12 center">
+                @{
+                    if(ViewBag.Pokemon == null){
+                        <h1>ViewBag EMPTY.</h1>
+                    }else{
+                        <ul>
+                            <li><h1>Primary Type: @ViewBag.Pokemon["types"][0]["type"]["name"]</h1></li>
+                            <li><h1>Height: @ViewBag.Pokemon["height"]</h1></li>
+                            <li><h1>Weight: @ViewBag.Pokemon["weight"]</h1></li>
+                            <li><h1>Nerd Type: Huge</h1></li>
+                        </ul>
+                        
+                    }
+                }
+            </div>
+        </div>
+    </div>
+}
