@@ -1,0 +1,8 @@
+/Users/BM/Desktop/aspDotNet/dojodachi/bin/Debug/netcoreapp1.1/dojodachi.deps.json
+/Users/BM/Desktop/aspDotNet/dojodachi/bin/Debug/netcoreapp1.1/dojodachi.runtimeconfig.json
+/Users/BM/Desktop/aspDotNet/dojodachi/bin/Debug/netcoreapp1.1/dojodachi.runtimeconfig.dev.json
+/Users/BM/Desktop/aspDotNet/dojodachi/bin/Debug/netcoreapp1.1/dojodachi.dll
+/Users/BM/Desktop/aspDotNet/dojodachi/bin/Debug/netcoreapp1.1/dojodachi.pdb
+/Users/BM/Desktop/aspDotNet/dojodachi/obj/Debug/netcoreapp1.1/dojodachi.AssemblyInfo.cs
+/Users/BM/Desktop/aspDotNet/dojodachi/obj/Debug/netcoreapp1.1/dojodachi.dll
+/Users/BM/Desktop/aspDotNet/dojodachi/obj/Debug/netcoreapp1.1/dojodachi.pdb
