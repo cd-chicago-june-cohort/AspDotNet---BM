@@ -1,1 +1,10 @@
-/*Write all of your CSS here*/
+* {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+button {
+    float: none;
+    width: 120px;
+}
