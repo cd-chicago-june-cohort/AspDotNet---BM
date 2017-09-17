@@ -13,8 +13,8 @@
 
 .header {
     font-size: 4em;
-    margin-top: 14%;
-    color: black;
+    margin-top: 200px;
+    color: white;
 }
 
 .movieInfo {
@@ -24,7 +24,7 @@
 }
 
 .movieForm {
-    padding: 10px;
+    padding-top: 10px;
     font-size: 2em;
     border: 2px solid slategray;
     background-color: black;
