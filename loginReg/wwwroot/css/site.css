@@ -16,12 +16,12 @@
 
 
 @keyframes cssann {
-    0%   {background-color:#070707; left:0px; top:0px;}
-    25%  {background-color:#979797; left:560px; top:0px;}
-    50%  {background-color:#070707; left:300; top:300px;}
-    75%  {background-color:#979797; left:0px; top:600px;}
-    90% {background-color:#070707; left:0px; top:200px;}
-    100%  {background-color:#979797; left:0px; top:0px;}
+    0%   {left:0px; top:0px;}
+    25%  {left:560px; top:0px;}
+    50%  {left:300; top:300px;}
+    75%  {left:0px; top:600px;}
+    90% {left:0px; top:200px;}
+    100%  {left:0px; top:0px;}
     
 }
 
@@ -43,12 +43,12 @@
 }
 
 @keyframes cssann1 {
-    0%   {background-color:#070707; left:0px; top:0px;}
-    25%  {background-color:#979797; right:300px; top:0px;}
-    50%  {background-color:#070707; right:800px; top:200px;}
-    75%  {background-color:#979797; right:100px; top:400px;}
-    90%  {background-color:#070707; right:0px; top:200px;}
-    100% {background-color:#979797; right:0px; top:0px;}
+    0%   {left:0px; top:0px;}
+    25%  {right:300px; top:0px;}
+    50%  {right:800px; top:200px;}
+    75%  {right:100px; top:400px;}
+    90%  {right:0px; top:200px;}
+    100% {right:0px; top:0px;}
 }
 
 

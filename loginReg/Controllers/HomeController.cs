@@ -14,6 +14,7 @@ namespace loginReg.Controllers
         [Route("")]
         public IActionResult Index()
         {
+            // Check for/print errors
             if((string)TempData["errors"] != ""){
                 return View();
             }
@@ -32,6 +33,8 @@ namespace loginReg.Controllers
                 List<Dictionary<string, object>> isUser = DbConnector.Query($"SELECT * FROM users WHERE email = '{newUser.email}'");
                 if(isUser.Count == 0){
                     DbConnector.Execute($"INSERT INTO users(firstName, lastName, email, password) VALUES('{newUser.firstName}', '{newUser.lastName}', '{newUser.email}', '{newUser.password}')");
+                    List<Dictionary<string, object>> loggedIn = DbConnector.Query("SELECT LAST_INSERT_ID()");
+                    HttpContext.Session.SetInt32("loggedIn", Convert.ToInt32(loggedIn[0]["LAST_INSERT_ID()"]));
                     return Redirect("home");
                 }else{
                     TempData["errors"] = "Email already registered.";
@@ -53,6 +56,7 @@ namespace loginReg.Controllers
                 TempData["errors"] = "Incorrect Password.";
                 return Redirect("/");
             }else{
+                HttpContext.Session.SetInt32("loggedIn", (int)isUser[0]["id"]);
                 return Redirect("home");
             }
         }
