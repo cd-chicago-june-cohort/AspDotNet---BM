@@ -1,0 +1,150 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    color: white;
+}
+
+.container {
+}
+
+.errors {
+    float: none;
+    text-align: center;
+    margin-left: auto;
+    color: red;
+}
+
+
+@keyframes cssann {
+    0%   {background-color:#070707; left:0px; top:0px;}
+    25%  {background-color:#979797; left:560px; top:0px;}
+    50%  {background-color:#070707; left:300; top:300px;}
+    75%  {background-color:#979797; left:0px; top:600px;}
+    90% {background-color:#070707; left:0px; top:200px;}
+    100%  {background-color:#979797; left:0px; top:0px;}
+    
+}
+
+.mover {
+    width: 200px;
+    height: 200px;
+    color: white;
+    /* background-color: #000000; */
+    position: relative;
+    -webkit-animation-name: cssann; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 6s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: 3; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+    animation-name: cssann;
+    animation-duration: 6s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out; 
+}
+
+@keyframes cssann1 {
+    0%   {background-color:#070707; left:0px; top:0px;}
+    25%  {background-color:#979797; right:300px; top:0px;}
+    50%  {background-color:#070707; right:800px; top:200px;}
+    75%  {background-color:#979797; right:100px; top:400px;}
+    90%  {background-color:#070707; right:0px; top:200px;}
+    100% {background-color:#979797; right:0px; top:0px;}
+}
+
+
+.mover1 {
+    width: 200px;
+    height: 200px;
+    color: white;
+    /* background-color: #000000; */
+    position: relative;
+    -webkit-animation-name: cssann; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: 3; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+    animation-name: cssann;
+    animation-duration: 4s;
+    animation-iteration-count: 4;
+    animation-direction: alternate;    
+}
+
+.mover2 {
+    width: 200px;
+    height: 200px;
+    color: white;
+    background-color: #000000;
+    position: relative;
+    
+}
+
+.mover3 {
+    width: 200px;
+    height: 200px;
+    color: white;
+    /* background-color: #000000; */
+    position: relative;
+    -webkit-animation-name: cssann; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: 3; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+    animation-name: cssann;
+    animation-duration: 5s;
+    animation-iteration-count: 4;
+    animation-direction: alternate;    
+}
+
+.mover4 {
+    width: 200px;
+    height: 200px;
+    color: white;
+    /* background-color: #000000; */
+    position: relative;
+    -webkit-animation-name: cssann; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 6s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: 3; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+    animation-name: cssann1;
+    animation-duration: 6s;
+    animation-iteration-count: 4;
+    animation-direction: alternate;    
+}
+
+.mover5 {
+    width: 200px;
+    height: 200px;
+    color: white;
+    /* background-color: #000000; */
+    position: relative;
+    -webkit-animation-name: cssann; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 6s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: 3; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+    animation-name: cssann;
+    animation-duration: 6s;
+    animation-iteration-count: 4;
+    animation-direction: alternate;    
+}
+
+.mover6 {
+    width: 200px;
+    height: 200px;
+    color: white;
+    /* background-color: #000000; */
+    position: relative;
+    -webkit-animation-name: cssann; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 8s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: 3; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+    animation-name: cssann;
+    animation-duration: 8s;
+    animation-iteration-count: 5;
+    animation-direction: alternate;    
+}
+
+img {
+    max-height: 200px;
+    max-width: 200px;
+    margin-left: 11%;
+    margin-top: 15%;
+    border-radius: 5px;
+}
