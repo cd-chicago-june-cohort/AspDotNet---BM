@@ -75,7 +75,7 @@ namespace theWall.Controllers
 
             ViewBag.Messages = allMessages;
 
-            List<Dictionary<string, object>> allComments = DbConnector.Query("SELECT concat(firstName, '', lastName) fullName, date_format(comments.created_at, '%M %D %Y') as date, comments.created_at, comment, message_id from users join comments on users.id=user_id order by created_at ASC");
+            List<Dictionary<string, object>> allComments = DbConnector.Query("SELECT concat(firstName, '', lastName) fullName, date_format(comments.created_at, '%M %D %Y') as date, time_format(comments.created_at, '%r') as time, comments.created_at, comment, message_id from users join comments on users.id=user_id order by created_at ASC");
 
             ViewBag.Comments = allComments;
 
