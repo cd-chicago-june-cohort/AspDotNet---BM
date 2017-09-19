@@ -66,6 +66,11 @@ namespace theWall.Controllers
         public IActionResult success()
         {
             
+            if (HttpContext.Session.GetInt32("loggedIn")==null) 
+            {
+                return View("index");
+            }
+            else {
             List<Dictionary<string, object>> allMessages = DbConnector.Query("SELECT concat(firstName, ' ', lastName) fullName, date_format(messages.created_at, '%M %D %Y') as date, message, messages.created_at, messages.id FROM messages join users on user_id=users.id order by created_at DESC");
 
             ViewBag.Messages = allMessages;
@@ -76,15 +81,24 @@ namespace theWall.Controllers
 
             return View("home");
         }
+        }
 
         [HttpPost]
         [Route("postMsg")]
         public IActionResult postMsg(string post)
         {
             int? msgID = HttpContext.Session.GetInt32("loggedIn");
+
+            Console.WriteLine("Logged in ID is: " + msgID);
         
-            post=post.Replace("'", "\'");
-            DbConnector.Execute($"INSERT INTO messages(user_id, message, created_at) VALUES ({msgID}, '{post}', NOW())");
+            string query = $"INSERT INTO messages(user_id, message, created_at) VALUES ({msgID}, '{post}', NOW() )";
+
+            Console.WriteLine("Query: " + query);
+            Console.WriteLine("The Post before escaping:" + post);
+            post = post.Replace("'", "\'");
+            Console.WriteLine("The Post after escaping:" + post);
+            
+            DbConnector.Execute(query);
 
             return Redirect("home");
         }
