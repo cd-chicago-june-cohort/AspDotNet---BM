@@ -93,11 +93,8 @@ namespace theWall.Controllers
         
             string query = $"INSERT INTO messages(user_id, message, created_at) VALUES ({msgID}, '{post}', NOW() )";
 
-            Console.WriteLine("Query: " + query);
-            Console.WriteLine("The Post before escaping:" + post);
             post = post.Replace("'", "\'");
-            Console.WriteLine("The Post after escaping:" + post);
-            
+        
             DbConnector.Execute(query);
 
             return Redirect("home");
@@ -112,6 +109,15 @@ namespace theWall.Controllers
             // comment=comment.Replace("'", "\'");
             DbConnector.Execute($"INSERT INTO comments(message_id, user_id, comment, created_at) VALUES ('{msgID}', {commentID}, '{comment}', NOW())");
 
+            return Redirect("home");
+        }
+
+        [HttpGet]
+        [Route("logout")]
+
+        public IActionResult logout()
+        {
+            HttpContext.Session.Clear();
             return Redirect("home");
         }
     }

@@ -2,18 +2,16 @@ using System;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using RESTauranter.Models;
+using bankAcct.Models;
 using MySQL.Data.EntityFrameworkCore.Extensions;
 using Microsoft.Extensions.Configuration;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 
-namespace RESTauranter
+namespace bankAcct
 {
-
     public class Startup
     {
-        
         public IConfiguration Configuration { get; private set; }
         public Startup(IHostingEnvironment env)
         {
@@ -29,8 +27,9 @@ namespace RESTauranter
             // Add framework services.
             services.AddMvc();
             services.AddSession();
-            services.AddDbContext<RestauranterContext>(options => options.UseMySQL(Configuration["DBInfo:ConnectionString"]));
+            services.AddDbContext<Context>(options => options.UseMySQL(Configuration["DBInfo:ConnectionString"]));
         }
+
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, ILoggerFactory loggerFactory)
         {
