@@ -29,18 +29,8 @@ namespace RESTauranter.Controllers
     [Route("processForm")]
     public IActionResult processForm(Review review)
     {
-        Console.WriteLine("********POOP******" + review.Reviewer);
         if(TryValidateModel(review))
         {
-            Console.WriteLine("TRY VALIDATE NO ERROR");
-            // Review newReview = new Review
-            // {
-            //     reviewer = review.reviewer,
-            //     restaurant = review.restaurant,
-            //     review = review.review,
-            //     rating = review.rating,
-            //     date = review.date
-            // };
             _context.Add(review);
             _context.SaveChanges();
             return Redirect("reviews");

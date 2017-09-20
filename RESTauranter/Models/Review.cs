@@ -14,20 +14,20 @@ namespace RESTauranter.Models
         public string Reviewer { get; set; }
 
         [Display(Name = "Restaurant Name")]
-        // [Required]
+        [Required]
         public string Restaurant { get; set; }
         
         [Display(Name = "Review")]
-        // [Required]
+        [Required]
         public string TheReview { get; set; }
 
         [Display(Name = "Visit Date")]
         [DataType(DataType.DateTime)]
-        // [Required]
+        [Required]
         public DateTime VisitDate { get; set; }
 
         [Display(Name = "Rating")]
-        // [Required]
+        [Required]
         public string Rating { get; set; }
     }
 }

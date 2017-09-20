@@ -2,13 +2,13 @@ using System;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using bankAcct.Models;
+using BankAccts.Models;
 using MySQL.Data.EntityFrameworkCore.Extensions;
 using Microsoft.Extensions.Configuration;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 
-namespace bankAcct
+namespace BankAccts
 {
     public class Startup
     {
