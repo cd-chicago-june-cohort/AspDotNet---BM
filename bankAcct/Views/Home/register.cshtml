@@ -2,9 +2,7 @@
 @model BankAccts.Models.RegisterViewModel
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 
-
 <div class="jumbotron">
-    <a href="/login"><button class="btn btn-default" style="float: right">login</button></a>
     <h1>REGISTER</h1>
 </div>
 
@@ -17,9 +15,8 @@
 
     <span asp-validation-for="LastName"></span>
     <br>
-    <label asp-for="LastName"></label>
     <input asp-for="LastName" class="form-control">
-    
+    <label asp-for="LastName"></label>
 
     <span asp-validation-for="Email"></span>
     <br>
@@ -36,6 +33,6 @@
     <label asp-for="PassConf"></label>
     <input asp-for="PassConf" class="form-control">
 
-    <input type="submit" class="btn btn-success submit" value="Register">
+    <input type="submit" class="btn btn-success submit">
 
 </Form>

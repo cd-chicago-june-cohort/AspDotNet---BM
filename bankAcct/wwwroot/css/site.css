@@ -1,1 +1,43 @@
-/*Write all of your CSS here*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.submit {
+    margin-top: 10px;
+    float: right;
+}
+
+.balance {
+    height: 60px;
+    text-align: center;
+    border: 1px solid green;
+    border-radius: 10px;
+}
+
+.deposit {
+    padding-top: 12px;
+    margin-left: 20px;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.center {
+    margin-top: 10px;
+}
+
+.ledger {
+    margin-top: 20px;
+    border: 1px solid green;
+    border-radius: 10px;
+}
+
+.btn {
+    width: 80px;
+}
