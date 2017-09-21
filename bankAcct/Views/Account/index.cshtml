@@ -26,7 +26,7 @@
         <form asp-controller="Account" asp-action="addTrans" method="post" class="form">
             <div class="row">
                 <div class="col-xs-8 deposit">
-                    <input style="text-align: center" class="form-control" asp-for="Amount" placeholder="Enter amount to deposit or withdraw">
+                    <input style="text-align: center" type="number" class="form-control" asp-for="Amount" placeholder="Enter amount to deposit or withdraw">
                     <span asp-validation-for="Amount"></span>
                 </div>
                 <div class="col-xs-2 deposit">

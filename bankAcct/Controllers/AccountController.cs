@@ -21,6 +21,13 @@ namespace BankAccts.Controllers
         [Route("account")]
         public IActionResult Index()
         {
+            if (HttpContext.Session.GetInt32("currentUser") == null) 
+            {
+                return Redirect ("login");
+            } 
+            else
+            {
+
             int? currentUserId = HttpContext.Session.GetInt32("currentUser");
             User getCurrentUser = _context.users.SingleOrDefault(user => user.Id == currentUserId);
             ViewBag.CurrentUser = getCurrentUser;
@@ -29,6 +36,7 @@ namespace BankAccts.Controllers
             ViewBag.Transactions = transactions;
 
             return View();
+            }
         }
 
         [HttpGet]
